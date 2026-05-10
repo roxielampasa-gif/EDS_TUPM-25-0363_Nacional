@@ -113,3 +113,25 @@ if __name__ == "__main__":
         pipeline.perform_analysis()
         pipeline.generate_outputs()
         print("\n🚀 PROJECT COMPLETE. Upload the /outputs folder and main.py to GitHub.")
+        from PIL import Image
+
+def save_as_gif(self):
+    print("🎬 Converting frames to GIF...")
+    frames = []
+    # This assumes you have multiple images saved or you can loop through a variable
+    # For a quick "Animated Trend" GIF, let's use your static plots as frames
+    image_files = ['outputs/static_histogram.png', 'outputs/static_boxplot.png', 'outputs/static_scatter.png']
+    
+    for f in image_files:
+        if os.path.exists(f):
+            new_frame = Image.open(f)
+            frames.append(new_frame)
+    
+    if frames:
+        frames[0].save('outputs/animated_report.gif',
+                       format='GIF',
+                       append_images=frames[1:],
+                       save_all=True,
+                       duration=1000, # 1 second per frame
+                       loop=0)
+        print("✅ GIF created: outputs/animated_report.gif")

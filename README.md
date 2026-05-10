@@ -1,21 +1,19 @@
-# EDS Engineering Data Systems Pipeline 
-**Project ID:** EDS_TUPM-25-0363  
-**Academic Year:** 2026  
-**Engineering Pillar:** Pillar 10 - Vibration & Noise Control / Materials Science  
+# SOL-03: Thermal Expansion Strains Analysis
 
-## 📌 Project Overview
-This repository contains a modular Python-based data analytics pipeline designed to ingest, clean, and analyze engineering datasets. The system is built using Object-Oriented Programming (OOP) principles and provides automated statistical analysis and visualizations in compliance with the 2026 Final Project requirements.
+**Mechanical Engineering - Computer Programming and Fundamentals Final Project**
 
-## 🛠️ System Architecture
-The pipeline is structured into four primary phases:
-1. **Data Ingestion:** Robust loading of CSV data with built-in error handling.
-2. **Preprocessing:** Automated removal of null values and duplicates, plus a unique programmatic filter.
-3. **Analytics:** Mathematical processing using NumPy to determine Mean, Variance, and Standard Deviation.
-4. **Visualization:** Generation of 3 static plots (Matplotlib/Seaborn) and 2 animated plots (Plotly).
+## Project Overview
+This project evaluates the **Coefficient of Thermal Expansion (CTE)** and resulting structural strains in engineering materials. By utilizing a Python-based data pipeline, the system analyzes material behavior under varying thermal loads, ensuring structural integrity in high-precision mechanical systems.
 
-## 🚀 Getting Started
+## Features
+* **Data Pipeline:** Automated ingestion, cleaning, and duplicate removal of high-fidelity material strain datasets.
+* **Engineering Analytics:** Computational analysis of Mean, Median, and Standard Deviation of expansion rates using **NumPy**.
+* **Unique Filter Logic:** Programmatic data isolation focusing on specific material classes (e.g., Filtering by Lattice Parameters or Density) to ensure unique research results.
+* **Visualization:** * **3 Static Engineering Charts:** Histogram of Strain Distribution, Boxplot for Outlier Detection, and Correlation Scatter Plots.
+    * **2 Animated Simulations:** Dynamic visualization of thermal strain convergence and property shifts over time.
 
-### Prerequisites
-Ensure you have Python 3.14+ installed. You will need the following libraries:
-```bash
-pip install pandas numpy matplotlib seaborn plotly
+## Installation & Setup
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/roxielampasa-gif/EDS_TUPM-25-0363_Nacional.git](https://github.com/roxielampasa-gif/EDS_TUPM-25-0363_Nacional.git)
+   cd EDS_TUPM-25-0363_Nacional
